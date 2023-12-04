@@ -7,12 +7,12 @@ from string import *
 
 def PART1(case):
 	s = 0
-	for i in case.readlines():
+	for line in case.readlines():
 		pass
 
 def PART2(case):
 	s = 0
-	for i in case.readlines():
+	for line in case.readlines():
 		pass
 
 

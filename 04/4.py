@@ -7,13 +7,42 @@ from string import *
 
 def PART1(case):
 	s = 0
-	for i in case.readlines():
-		pass
+	for line in case.readlines():
+		line = line.split(': ')[1]
+		card, win = [*map(lambda x: [*map(int, [*filter(lambda g: g != '', x.replace('  ', ' ').split(' '))])], line.split(' | '))]
+		r = 1
+		for w in win:
+			if w in card:
+				r *= 2
+		s += r//2
+	return s
 
 def PART2(case):
 	s = 0
-	for i in case.readlines():
-		pass
+	cards = {}
+	cardcount = {}
+	for line in case.readlines():
+		cid, card = line.split(': ')
+		# print(card)
+		cid = int(cid.split(' ')[-1])
+		card, win = [*map(lambda x: [*map(int, [*filter(lambda g: g != '', x.replace('  ', ' ').split(' '))])], card.split(' | '))]
+		cards[cid] = [card, win]
+		cardcount[cid] = 1
+	# Print(cards)
+	# print(cardcount)
+	for cid in cards.keys():
+		count = cardcount[cid]
+		card, win = cards[cid]
+		matching = 0
+		for w in win:
+			matching += w in card
+		for n in range(cid+1,cid+1+matching):
+			if n not in cardcount:
+				break
+			cardcount[n] += count
+
+	# print(cardcount)
+	return sum(cardcount.values())
 
 
 
