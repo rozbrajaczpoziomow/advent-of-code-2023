@@ -1,8 +1,9 @@
 # Advent of Code 2023
-in python, with probably terribly optimised code
+in python, with probably some terribly optimised code
 ```
       --------Part 1--------   --------Part 2--------
 Day       Time   Rank  Score       Time   Rank  Score
+  7   00:16:59    596      0   00:21:08    285      0
   6   00:31:18   9337      0   00:31:39   7519      0
   5   00:26:09   2335      0   00:43:47    599      0
   4   12:32:25  66407      0   12:40:19  53961      0
