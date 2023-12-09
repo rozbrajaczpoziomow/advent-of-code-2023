@@ -3,6 +3,7 @@ in python, with probably some terribly optimised code
 ```
       --------Part 1--------   --------Part 2--------
 Day       Time   Rank  Score       Time   Rank  Score
+  9   03:26:43  16128      0   03:28:50  15317      0
   7   00:16:59    596      0   00:21:08    285      0
   6   00:31:18   9337      0   00:31:39   7519      0
   5   00:26:09   2335      0   00:43:47    599      0
