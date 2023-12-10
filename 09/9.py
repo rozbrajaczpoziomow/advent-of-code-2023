@@ -73,8 +73,10 @@ if runPart1:
 		with open('input.txt', 'r') as f:
 			print(f'- Real: {PART1(f)}')
 
+	print()
+
 if runPart2:
-	print('\nPart 2:')
+	print('Part 2:')
 
 	if runTest:
 		with open('test.txt', 'r') as f:
