@@ -16,13 +16,13 @@ def PART1(case):
 				delta = g[-1][i] - g[-1][i-1]
 				arr += [delta]
 			g += [arr]
-		print(g)
+		# print(g)
 		g[-1] += [0]
 		for i in range(len(g)-2, -1, -1):
-			print(g[i])
+			# print(g[i])
 			g[i] += [g[i+1][-1] + g[i][-1]]
-			print(g[i])
-		print(g)
+			# print(g[i])
+		# print(g)
 		s += g[0][-1]
 	return s
 
@@ -37,13 +37,13 @@ def PART2(case):
 				delta = g[-1][i] - g[-1][i-1]
 				arr += [delta]
 			g += [arr]
-		print(g)
+		# print(g)
 		g[-1] += [0]
 		for i in range(len(g)-2, -1, -1):
-			print(g[i])
+			# print(g[i])
 			g[i] += [g[i+1][-1] + g[i][-1]]
-			print(g[i])
-		print(g)
+			# print(g[i])
+		# print(g)
 		s += g[0][-1]
 	return s
 
